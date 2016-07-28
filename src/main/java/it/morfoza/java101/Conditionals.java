@@ -8,19 +8,19 @@ public class Conditionals {
         boolean b2 = false;
         boolean result = 1 < 2;
 
-        int wiek = 15;
+        int wiek = 20;
 
         boolean jestWGimbazie = wiek >= 13 && wiek <= 16;
         if (jestWGimbazie) {
             System.out.println("Hurra");
         }
 
-        boolean NieJestWGimbazie = wiek < 13 || wiek > 16;
-        if (NieJestWGimbazie) {
-            System.out.println(NieJestWGimbazie);
+        boolean nieJestWGimbazie = wiek < 13 || wiek > 16;
+        if (nieJestWGimbazie) {
+            System.out.println(nieJestWGimbazie);
         }
 
-        NieJestWGimbazie = ! jestWGimbazie;
+        nieJestWGimbazie = ! jestWGimbazie;
 
         boolean liceum = wiek > 16 && wiek < 20;
         if (jestWGimbazie) {
