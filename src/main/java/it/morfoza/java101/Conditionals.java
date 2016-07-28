@@ -8,8 +8,33 @@ public class Conditionals {
         boolean b2 = false;
         boolean result = 1 < 2;
 
+        int wiek = 15;
 
-        if (result=true) {
+        boolean jestWGimbazie = wiek >= 13 && wiek <= 16;
+        if (jestWGimbazie) {
+            System.out.println("Hurra");
+        }
+
+        boolean NieJestWGimbazie = wiek < 13 || wiek > 16;
+        if (NieJestWGimbazie) {
+            System.out.println(NieJestWGimbazie);
+        }
+
+        NieJestWGimbazie = ! jestWGimbazie;
+
+        boolean liceum = wiek > 16 && wiek < 20;
+        if (jestWGimbazie) {
+            System.out.println("liceum");
+        }
+
+        boolean nieLiceum = wiek <= 16 || wiek >= 20;
+        if (nieLiceum) {
+            System.out.println("spadaj");
+        }
+
+
+
+            if (result=true) {
             System.out.println("b1 is true");
         } else {
             System.out.println("b1 is false");
