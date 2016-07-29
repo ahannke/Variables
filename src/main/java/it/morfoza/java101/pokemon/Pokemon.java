@@ -18,7 +18,7 @@ public class Pokemon {
         return "Pokemon: " + name + " health: " + health;
     }
 
-    public void takeAttack(long attackStrenght) {
+    public void takeAttack(long attackStrength) {
         health -= 100;
     }
 
