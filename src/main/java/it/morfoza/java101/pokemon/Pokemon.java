@@ -5,23 +5,26 @@ public class Pokemon {
 
     private String name;
     private long health = 1000;
+    private long combatPower;
 
-    public Pokemon(String name) {
+
+    public Pokemon(String name, long combatPower) {
 
         this.name = name;
+        this.combatPower = combatPower;
     }
 
     public String toString(){
         return "Pokemon: " + name + " health: " + health;
     }
 
-    public void takeAttack() {
+    public void takeAttack(long attackStrenght) {
         health -= 100;
     }
 
 
     public boolean isAlive() {
-        if (health>0) {
+        if (health > 0) {
             return true;
         } else {
             return false;
@@ -30,4 +33,8 @@ public class Pokemon {
     }
 
 
+    public void attack(Pokemon enemy) {
+        enemy.takeAttack(combatPower);
+
+    }
 }
