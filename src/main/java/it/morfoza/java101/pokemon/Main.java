@@ -4,12 +4,54 @@ public class Main {
 
     public static void main(String[] args) {
 
-    Pokemon pokemon = new Pokemon();
+        Pokemon pokemon = new Pokemon("Pikachu");
+        Pokemon pokemon2 = new Pokemon("Charizard");
+        Pokemon pokemon3 = new Pokemon("Bulbasaur");
 
-    String pokemonDescription = pokemon.toString();
+        System.out.println(pokemon);
+        System.out.println(pokemon2);
+        System.out.println(pokemon3);
 
-        System.out.println(pokemonDescription);
+        pokemon.takeAttack();
+
+        System.out.println(pokemon);
+        System.out.println(pokemon2);
+        System.out.println(pokemon3);
+
+        if(pokemon.isAlive()) {
+            System.out.println("Pokemon is alive");
+        } else {
+            System.out.println("Pokemon is unconscious");
+        }
+
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+        pokemon.takeAttack();
+
+
+
+
+
+        if(pokemon.isAlive()) {
+            System.out.println("Pokemon is alive");
+        } else {
+            System.out.println("Pokemon is unconscious");
+        }
+
+        System.out.println(pokemon);
+
+
+
 
     }
+
 
 }

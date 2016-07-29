@@ -1,4 +1,4 @@
-package it.morfoza.java101;
+package it.morfoza.java101.other;
 
 public class Conditionals {
 
