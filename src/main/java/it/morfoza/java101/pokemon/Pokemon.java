@@ -14,7 +14,7 @@ public class Pokemon {
         this.combatPower = combatPower;
     }
 
-    public String toString(){
+    public String toString() {
         return "Pokemon: " + name + " health: " + health;
     }
 
@@ -34,7 +34,9 @@ public class Pokemon {
 
 
     public void attack(Pokemon enemy) {
-        enemy.takeAttack(combatPower);
+        if (this != enemy) {
+            enemy.takeAttack(combatPower);
 
+        }
     }
 }

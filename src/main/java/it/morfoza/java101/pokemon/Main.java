@@ -14,12 +14,10 @@ public class Main {
 
         System.out.println();
 
-        pokemon3.attack(pokemon);
-        pokemon3.attack(pokemon);
-        pokemon3.attack(pokemon);
-        pokemon3.attack(pokemon);
-        pokemon3.attack(pokemon);
-        pokemon3.attack(pokemon);
+
+        pokemon2.attack(pokemon2);
+        pokemon3.attack(pokemon2);
+
 //        pokemon.takeAttack(1000);
 
         System.out.println(pokemon);
